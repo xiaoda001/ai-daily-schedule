@@ -26,20 +26,20 @@ jobs:
             target: x86_64-pc-windows-msvc
             args: --target x86_64-pc-windows-msvc
           - name: macOS Apple Silicon
-            os: macos-latest
+            os: macos-15
             target: aarch64-apple-darwin
             args: --target aarch64-apple-darwin
           - name: macOS Intel
-            os: macos-latest
+            os: macos-15-intel
             target: x86_64-apple-darwin
             args: --target x86_64-apple-darwin
 
     steps:
       - name: Checkout source
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: 22
           cache: npm
