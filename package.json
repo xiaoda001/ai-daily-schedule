@@ -1,0 +1,22 @@
+{
+  "name": "ai-daily-schedule",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 1420 --strictPort",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "tauri": "tauri",
+    "tauri:dev": "tauri dev",
+    "tauri:build": "tauri build"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.12.4",
+    "typescript": "5.9.3",
+    "vite": "6.4.4"
+  },
+  "dependencies": {
+    "@tauri-apps/plugin-dialog": "2.4.1"
+  }
+}
